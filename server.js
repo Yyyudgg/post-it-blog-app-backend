@@ -13,7 +13,7 @@ connectDB();
 
 // Cors
 app.use(cors({
-    origin: ['http://localhost:3000','https://postitweb.netlify.app'], // Allow only requests from this origin
+    origin: ['http://localhost:3000','https://post-it-blog-app.netlify.app'], // Allow only requests from this origin
     methods: ['GET', 'POST', 'PUT', 'DELETE'], // Specify the allowed HTTP methods
     credentials: true // Include credentials (e.g. cookies) in the requests
 }));
@@ -21,9 +21,9 @@ app.use(cors({
 app.use(express.json());
 
 // Routes
-// app.use("/", (req, res) => {
-//   res.send("Hello, world!");
-// });
+app.use("/", (req, res) => {
+  res.send("Hello, world!");
+});
 
 app.use("/api/auth", auth);
 app.use("/api/posts", post);
