@@ -50,7 +50,7 @@ post-it-blog-app-backend/
 │   └── auth.js
 ├── config/
 │   └── db.js
-├── .env
+├── .env.example
 ├── server.js
 </pre>
 
