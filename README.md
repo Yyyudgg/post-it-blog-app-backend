@@ -34,6 +34,26 @@ This is the backend Repo for the **Post-It Blog App**, a full-stack blogging app
 - `cors` - Cross-origin resource sharing
 - `mongoose` - MongoDB object modeling
 
+## 📁 Folder Structure
+<pre>
+post-it-blog-app-backend/
+├── controllers/
+│   ├── auth.controller.js
+│   └── post.controller.js
+├── models/
+│   ├── User.js
+│   └── Post.js
+├── routes/
+│   ├── auth.js
+│   └── posts.js
+├── middleware/
+│   └── auth.js
+├── config/
+│   └── db.js
+├── .env
+├── server.js
+</pre>
+
 ## 📝 Setup Instructions
 ```bash
 git clone https://github.com/jeevan42/post-it-blog-app-backend
@@ -41,3 +61,7 @@ cd post-it-blog-app-backend
 npm install
 # Add .env file with your MongoDB URI and JWT_SECRET
 npm start
+```
+
+## 🙌 Contributing
+PRs and stars are welcome. For major changes, open an issue first to discuss what you would like to change.
